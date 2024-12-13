@@ -49,10 +49,30 @@ const users = [
 ]
 
 users[1].email
-console.log(zomatouser)
+// console.log(zomatouser)
 
-console.log(Object.keys(zomatouser));// if we write only Object.keys() it cant idendify which obj i need to retrun or get
-console.log(Object.values(zomatouser));
-console.log(Object.entries(zomatouser));
+// console.log(Object.keys(zomatouser));// if we write only Object.keys() it cant idendify which obj i need to retrun or get
+// console.log(Object.values(zomatouser));
+// console.log(Object.entries(zomatouser));
 
-console.log(zomatouser.hasOwnProperty('isLoggedIn')) // it will checks whether the given property is there or not by hasownproperty()
+// console.log(zomatouser.hasOwnProperty('isLoggedIn')) // it will checks whether the given property is there or not by hasownproperty()
+
+const course = {
+    coursename: "js in hindi",
+    price: "999",
+    courseInstructor:"hitesh"
+}
+
+// course.courseInstructor
+
+const {coursename: cname} = course // also we can change the key names also or destructure
+// console.log(coursename)
+console.log(cname)
+
+
+// api 
+[
+    {}
+    {}
+    {}
+]
