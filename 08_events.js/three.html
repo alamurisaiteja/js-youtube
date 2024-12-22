@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="h1">inside events third file</h1>
+    <button id="start">start</button>
+    <button id="stop">stop</button>
+
+    
+</body>
+<script>
+
+
+let date = new Date().getTime()
+console.log(date)
+let interval;
+let  startbtn = document.querySelector('#start')
+let  stopbtn = document.querySelector('#stop')
+startbtn.addEventListener('click',function() {
+    if(!interval) {
+        interval = setInterval( function() {
+            console.log(date)
+        },2000)
+    }
+});
+stopbtn.addEventListener('click',function() {
+    clearInterval(interval);
+    interval = null;
+
+})
+
+</script>
+</html>

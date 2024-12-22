@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="h1">async</h1>
+    <button id="stop">stop</button>
+    <script >
+        const greet = function() {
+            console.log('hello champion')
+        }
+const edit = function() {document.querySelector('h1').innerHTML="welcome to my repo inside"}
+       // here we dont mention () for function because it just needed reference so we just mention its name
+
+       const changeme = setTimeout(edit,2000)
+      document.querySelector('#stop').addEventListener('click',function() {
+        clearTimeout(changeme)
+        console.log("stopped")
+        
+      })
+    </script>
+</body>
+</html>
